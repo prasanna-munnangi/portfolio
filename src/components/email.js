@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { email } from '@config';
 import { Side } from '@components';
 
 const StyledLinkWrapper = styled.div`
@@ -19,7 +18,7 @@ const StyledLinkWrapper = styled.div`
     background-color: var(--light-slate);
   }
 
-  a {
+  p {
     margin: 20px auto;
     padding: 10px;
     font-family: var(--font-mono);
@@ -38,7 +37,7 @@ const StyledLinkWrapper = styled.div`
 const Email = ({ isHome }) => (
   <Side isHome={isHome} orientation="right">
     <StyledLinkWrapper>
-      <a href={`mailto:${email}`}>{email}</a>
+      <p>Senior Software Engineer</p>
     </StyledLinkWrapper>
   </Side>
 );

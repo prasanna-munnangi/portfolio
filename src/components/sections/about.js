@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import Icon from '../icons/icon';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -22,7 +23,7 @@ const StyledText = styled.div`
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
+    grid-gap: 10px 10px;
     padding: 0;
     margin: 20px 0 0 0;
     overflow: hidden;
@@ -34,15 +35,13 @@ const StyledText = styled.div`
       padding-left: 20px;
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
+    }
 
-      &:before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: var(--green);
-        font-size: var(--fz-sm);
-        line-height: 12px;
-      }
+    img,
+    svg {
+      width: 25px;
+      height: auto;
+      margin-right: 10px;
     }
   }
 `;
@@ -61,7 +60,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--blue);
 
     &:hover,
     &:focus {
@@ -106,7 +105,7 @@ const StyledPic = styled.div`
     }
 
     &:after {
-      border: 2px solid var(--green);
+      border: 2px solid var(--blue);
       top: 20px;
       left: 20px;
       z-index: -1;
@@ -126,7 +125,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Ruby On Rails',
+    'JavaScript',
+    'React',
+    'AWS',
+    'Redux',
+    'MySQL',
+    'Vue',
+    'TypeScript',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,37 +144,48 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Prasanna and I am passionate about solving challenging problems. I
+              started web development in early 2014 as a full stack engineer right after my Masters
+              in Management Information Systems. I strive to write quality code with good test
+              coverage. I currently work as Senior Software Engineer, interact with cross functional
+              teams, engage in planning and grooming of the cards, make technical decisions on the
+              architecture, build new features, perform code reviews and fix high priority
+              production bugs.
+            </p>
+            <p>
+              I use AWS Codepipline for running test suite, S3 to store documents. My main focus
+              these days is working on a online bidding flatform{' '}
+              <a
+                href="https://www.bidexpress.com"
+                target="_blank"
+                aria-label="Bidexpress site"
+                rel="noreferrer">
+                BidExpress
+              </a>
+              , building bid analytics dashboard and migrating the data from Mongodb to AWS S3 in a
+              Ruby on Rails application.
+            </p>
+            <p>
+              I am an AWS certified Developer Associate and was awarded MVP of the team in
+              Code-a-thon competition.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Here are a few technologies I’ve been working with recently: (Please check out my
+              resume on the top right for full list of technologies)
             </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            {skills &&
+              skills.map((skill, i) => (
+                <li key={i}>
+                  <span className={skill.replaceAll(' ', '')}>
+                    <Icon name={skill.replaceAll(' ', '')} />
+                  </span>
+                  <span>{skill}</span>
+                </li>
+              ))}
           </ul>
         </StyledText>
 
@@ -174,7 +193,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src=""
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

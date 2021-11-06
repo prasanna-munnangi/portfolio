@@ -15,6 +15,14 @@ import {
   IconPlayStore,
   IconStar,
   IconTwitter,
+  IconRubyOnRails,
+  IconJavaScript,
+  IconReact,
+  IconRedux,
+  IconMysql,
+  IconVue,
+  IconAws,
+  IconTypeScript,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -47,6 +55,22 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'RubyOnRails':
+      return <IconRubyOnRails />;
+    case 'JavaScript':
+      return <IconJavaScript />;
+    case 'React':
+      return <IconReact />;
+    case 'Redux':
+      return <IconRedux />;
+    case 'MySQL':
+      return <IconMysql />;
+    case 'Vue':
+      return <IconVue />;
+    case 'TypeScript':
+      return <IconTypeScript />;
+    case 'AWS':
+      return <IconAws />;
     default:
       return <IconExternal />;
   }
