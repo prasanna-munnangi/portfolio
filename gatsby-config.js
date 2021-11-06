@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'Prasanna Kumar M',
     description:
-      'Prasanna Kumar M is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+      'Prasanna Kumar M is a senior full stack software engineer who specializes in web development using Ruby on Rails.',
+    siteUrl: 'localhost:8000', // No trailing slash allowed!
+    image: '', // Path to your image you placed in the 'static' folder
+    // twitterUsername: '@bchiang7',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'PrasannaKumarM',
+        short_name: 'PrasannaKumar',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
@@ -149,11 +149,11 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-45666519-2',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     // trackingId: 'UA-45666519-2',
+    //   },
+    // },
   ],
 };

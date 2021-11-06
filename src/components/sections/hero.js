@@ -226,7 +226,7 @@ const Hero = () => {
   );
   const two = (
     <JobTitle>
-      <h3 className="big-heading">I am a Senior Software Engineer.</h3>
+      <h3 className="big-heading">I work as Senior Software Engineer.</h3>
     </JobTitle>
   );
   const three = (

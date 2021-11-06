@@ -43,11 +43,15 @@ const StyledSocialLinks = styled.div`
 const StyledCredit = styled.div`
   color: var(--light-slate);
   font-family: var(--font-mono);
-  font-size: var(--fz-xxs);
+  font-size: var(--fz-xxxs);
   line-height: 1;
 
-  a {
-    padding: 10px;
+  div.credit {
+    margin-top: 100px;
+  }
+
+  div.adapt {
+    margin-top: 5px;
   }
 
   .github-stats {
@@ -105,22 +109,27 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/bchiang7/v4">
-          <div>Designed &amp; Built by Brittany Chiang</div>
+        <div className="credit">
+          <a href="https://github.com/bchiang7/v4">Designed &amp; Built by Brittany Chiang</a>
+        </div>
+        <div className="adapt">
+          <a href="https://github.com/prasanna-munnangi">
+            Adapted &amp; Built by Prasanna Kumar M.
+          </a>
+        </div>
 
-          {githubInfo.stars && githubInfo.forks && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
-        </a>
+        {githubInfo.stars && githubInfo.forks && (
+          <div className="github-stats">
+            <span>
+              <Icon name="Star" />
+              <span>{githubInfo.stars.toLocaleString()}</span>
+            </span>
+            <span>
+              <Icon name="Fork" />
+              <span>{githubInfo.forks.toLocaleString()}</span>
+            </span>
+          </div>
+        )}
       </StyledCredit>
     </StyledFooter>
   );
