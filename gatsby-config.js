@@ -1,13 +1,13 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: '/portfolio',
   siteMetadata: {
     title: 'Prasanna Kumar M',
     description:
       'Prasanna Kumar M is a senior full stack software engineer who specializes in web development using Ruby on Rails.',
-    siteUrl: 'localhost:8000', // No trailing slash allowed!
-    image: '', // Path to your image you placed in the 'static' folder
-    // twitterUsername: '@bchiang7',
+    siteUrl: 'https://prasanna-munnangi.github.io/portfolio', // No trailing slash allowed!
+    image: 'src/images/logo.svg', // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
