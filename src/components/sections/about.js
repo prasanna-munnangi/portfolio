@@ -162,8 +162,8 @@ const About = () => {
                 rel="noreferrer">
                 BidExpress
               </a>
-              , building bid analytics dashboard and migrating the data from Mongodb to AWS S3 in a
-              Ruby on Rails application.
+              , building bid analytics dashboard, enhancing webcrypto digital ID process, migrating
+              the data from Mongodb to AWS S3 in a Ruby on Rails application.
             </p>
             <p>
               I am an AWS certified Developer Associate and was awarded MVP of the team in

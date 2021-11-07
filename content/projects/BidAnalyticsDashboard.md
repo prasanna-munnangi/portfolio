@@ -12,4 +12,4 @@ company: 'Info Tech Inc'
 showInProjects: true
 ---
 
-Built Analytics dashboard for the agencies to view the bidders statistics, including google map integration of the bidder location
+Built Analytics dashboard for the agencies to view the bidders statistics, including google map integration of the bidder location.
