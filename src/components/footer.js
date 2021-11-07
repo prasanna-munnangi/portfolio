@@ -113,7 +113,7 @@ const Footer = () => {
           <a href="https://github.com/bchiang7/v4">Designed &amp; Built by Brittany Chiang</a>
         </div>
         <div className="adapt">
-          <a href="https://github.com/prasanna-munnangi">
+          <a href="https://github.com/prasanna-munnangi/prasanna-munnangi.github.io">
             Adapted &amp; Built by Prasanna Kumar M.
           </a>
         </div>
