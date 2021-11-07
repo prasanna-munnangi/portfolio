@@ -4,9 +4,9 @@ module.exports = {
   siteMetadata: {
     title: 'Prasanna Kumar M',
     description:
-      'Prasanna Kumar M is a senior full stack software engineer who specializes in web development using Ruby on Rails.',
-    siteUrl: 'https://prasanna-munnangi.github.io/portfolio', // No trailing slash allowed!
-    image: 'src/images/logo.svg', // Path to your image you placed in the 'static' folder
+      'Prasanna Kumar M is a Senior Full Stack Software Engineer who specializes in web development.',
+    siteUrl: 'https://prasanna-munnangi.github.io', // No trailing slash allowed!
+    image: '/thumbnail.png', // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
