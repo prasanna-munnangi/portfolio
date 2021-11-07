@@ -180,8 +180,8 @@ const About = () => {
             {skills &&
               skills.map((skill, i) => (
                 <li key={i}>
-                  <span className={skill.replaceAll(' ', '')}>
-                    <Icon name={skill.replaceAll(' ', '')} />
+                  <span className={skill.replace(/\s/g, '')}>
+                    <Icon name={skill.replace(/\s/g, '')} />
                   </span>
                   <span>{skill}</span>
                 </li>
