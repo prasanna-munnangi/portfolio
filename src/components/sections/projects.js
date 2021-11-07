@@ -266,7 +266,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Projects I've Accomplished
+        Few Projects I've Accomplished
       </h2>
       <StyledProjectsSection>
         {/* <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>

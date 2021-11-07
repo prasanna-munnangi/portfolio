@@ -76,6 +76,9 @@ const JobTitle = styled.div`
   }
 `;
 const AnimatedComponent = styled.div`
+  h1 {
+    margin-top: 60px;
+  }
   span {
     display: inline-block;
     opacity: 0;
