@@ -25,7 +25,7 @@ const StyledText = styled.div`
     grid-template-columns: repeat(2, minmax(140px, 200px));
     grid-gap: 10px 10px;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 35px 0 0 0;
     overflow: hidden;
     list-style: none;
 
