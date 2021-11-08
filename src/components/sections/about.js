@@ -153,7 +153,7 @@ const About = () => {
               production bugs.
             </p>
             <p>
-              I use AWS Codepipline for running test suite, S3 to store documents. My main focus
+              I use AWS Codepipeline for running test suite, S3 to store documents. My main focus
               these days is working on a online bidding flatform{' '}
               <a
                 href="https://www.bidexpress.com"
@@ -172,7 +172,7 @@ const About = () => {
 
             <p>
               Here are a few technologies I’ve been working with recently: (Please check out my
-              resume on the top right for full list of technologies)
+              resume on the top right nav bar for full list of technologies)
             </p>
           </div>
 
